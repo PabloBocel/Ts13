@@ -30,7 +30,7 @@ namespace Ts13git_PABM_1109623
         {
             Console.WriteLine("Nombre: " + Nombre);
             Console.WriteLine("Apellido: " + Apellido);
-            Console.WriteLine("Edad: " + Edad + "años");
+            Console.WriteLine("Edad: " + Edad + " años");
             Console.WriteLine("Altura: " + Altura + "cm");
         }
 
