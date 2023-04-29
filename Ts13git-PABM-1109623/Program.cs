@@ -58,7 +58,44 @@ namespace Ts13git_PABM_1109623
                         Console.ReadKey();
                         Console.Clear();
                         break;
+                    case 2:
+                        Console.Clear();
+                        Console.WriteLine("Trabajo supervisado semana 13_PABM_1109623");
+                        Console.WriteLine("Tabla de multiplicar\n");
+                        Console.Write("Ingrese el tamaño de la matriz: ");
+                        int n = int.Parse(Console.ReadLine());
+                        Console.Write("Ingrese el tamaño de la matriz: ");
+                        int x = int.Parse(Console.ReadLine());
+
+                        int[,] matriz = new int[n, x];
+                        for (int i = 1; i <= n; i++)
+                        {
+                            for (int j = 1; j <= x; j++)
+                            {
+                                matriz[i - 1, j - 1] = i * j;
+                            }
+                        }
+
+                        for (int i = 0; i < n; i++)
+                        {
+                            for (int j = 0; j < x; j++)
+                            {
+                                Console.Write(matriz[i, j] + "\t");
+                            }
+                            Console.WriteLine();
+                        }
+
+                        Console.ReadKey();
+                        Console.Clear();
+                        break;
+                    case 3:
+                        menu = "3";
+                        break;
+                    default:
+                        Console.WriteLine("Ingrese una opción del menú");
+                        break;
                 }
+                Console.ReadKey();
             }
         }
     }
